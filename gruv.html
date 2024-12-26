@@ -341,20 +341,20 @@ shortenText(text) {
 				    },
 			    });
 
-                monaco.editor.defineTheme('RblxStudio-theme-dark', {
+                monaco.editor.defineTheme('gruvbox-theme-dark', {
                     base: 'vs-dark',
                     inherit: true,
                     colors: {
-                        "editor.background": '#272757',
+                        "editor.background": '#282828',
                     },
                     
                     rules: [
                         { token: 'text', foreground: 'FFFFFF' },
-                        { token: 'global', foreground: '84D6F7', fontStyle: "bold" },
-                        { token: 'keyword', foreground: 'F86D7C', fontStyle: "bold" },
-                        { token: 'comment', foreground: '666666' },
-                        { token: 'number', foreground: 'FFC600' },
-                        { token: 'string', foreground: 'ADF195' },
+                        { token: 'global', foreground: 'cc241d', fontStyle: "bold" },
+                        { token: 'keyword', foreground: 'b8bb26', fontStyle: "bold" },
+                        { token: 'comment', foreground: 'a89984' },
+                        { token: 'number', foreground: 'd79921' },
+                        { token: 'string', foreground: '98971a' },
                         { token: 'Method', foreground: '84D6F7' },
                 ]
                 });
@@ -362,7 +362,7 @@ shortenText(text) {
                 editor = monaco.editor.create(document.getElementById('container'), {
                     value: '',
                     language: 'lua',
-                    theme: 'RblxStudio-theme-dark',
+                    theme: 'gruvbox-theme-dark',
                     acceptSuggestionOnEnter: "smart",
 				    suggestOnTriggerCharacters: true,
 				    suggestSelection: "recentlyUsed",
